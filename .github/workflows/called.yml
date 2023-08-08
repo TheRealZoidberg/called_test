@@ -1,0 +1,9 @@
+on:
+  workflow_call:
+  
+jobs:
+  deploy-book:
+      runs-on: ubuntu-latest
+      steps:  
+      - name: Echo Var
+        run: echo "Testing..."
