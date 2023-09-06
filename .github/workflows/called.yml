@@ -1,9 +1,13 @@
 on:
   workflow_call:
-  
+    inputs:  
+      python-version:
+        required: true
+        type: string
+        
 jobs:
   deploy-book:
       runs-on: ubuntu-latest
       steps:  
       - name: Echo Var
-        run: echo "Testing...with python version ${{ inputs.python-versoin }}"
+        run: echo "Testing...with python version ${{ inputs.python-version }}"
