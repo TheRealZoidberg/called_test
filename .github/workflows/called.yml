@@ -6,4 +6,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:  
       - name: Echo Var
-        run: echo "Testing..."
+        run: echo "Testing...with python version ${{ inputs.python-versoin }}"
